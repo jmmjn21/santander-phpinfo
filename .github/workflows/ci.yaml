@@ -28,7 +28,7 @@ jobs:
       - name: top
         run: docker top ${project}
       - name: stats
-        run: --no-stream ${project}
+        run: docker stats --no-stream ${project}
       - name: inspect
         run: docker inspect ${project}
       - name: history
